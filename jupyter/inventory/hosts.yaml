@@ -1,0 +1,74 @@
+R1:
+  hostname: 198.18.1.101
+  groups:
+    - New York
+  data:
+    tags:
+      - isr4400
+R2:
+  hostname: 198.18.1.102
+  groups:
+    - New York
+  data:
+    tags:
+      - isr4300
+R3:
+  hostname: 198.18.1.103
+  groups:
+    - New York
+  data:
+    tags:
+      - isr4400
+      - edge
+R4:
+  hostname: 198.18.1.104
+  groups:
+    - New York
+  data:
+    tags:
+      - isr4300
+R5:
+  hostname: 198.18.1.105
+  groups:
+    - New York
+  data:
+    tags:
+      - isr4400
+      - edge
+R6:
+  hostname: 198.18.1.106
+  groups:
+    - London
+  data:
+    tags:
+      - isr4300
+      - edge
+R7:
+  hostname: 198.18.1.107
+  groups:
+    - London
+  data:
+    tags:
+      - isr4400
+      - edge
+R8:
+  hostname: 198.18.1.108
+  groups:
+    - London
+  data:
+    tags:
+      - isr4300
+R9:
+  hostname: 198.18.1.109
+  groups:
+    - London
+  data:
+    tags:
+      - isr4400
+R10:
+  hostname: 198.18.1.110
+  groups:
+    - London
+  data:
+    tags:
+      - isr4300
