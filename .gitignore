@@ -64,3 +64,4 @@ tmp/
 settings.toml
 
 .ipynb_checkpoints/
+session-details.txt
