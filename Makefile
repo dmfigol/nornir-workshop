@@ -1,5 +1,4 @@
-OCTETS = 101 102 103 104 105 106 107 108 109 110
-.PHONY: up
+.PHONY: restconf-check
 restconf-check:
 	for number in 101 102 103 104 105 106 107 108 109 110 ; do \
 		curl -k -u cisco:cisco -H "Accept: application/yang-data+json" https://198.18.1.$$number/restconf/data/native/hostname ; \
@@ -11,9 +10,9 @@ pull:
 
 .PHONY: up
 up:
-	docker kill $(docker ps -q); \
+	docker kill $(shell docker ps -q); \
 	docker pull dmfigol/jupyter-netdevops:latest; \
-	docker run -it --rm -p 58888:58888 -v ${PWD}/jupyter:/jupyter/ --name=nornir-workshop dmfigol/jupyter-netdevops:latest
+	docker run -it --rm -d -p 58888:58888 -v ${PWD}/jupyter:/jupyter/ --name=nornir-workshop dmfigol/jupyter-netdevops:latest
 
 .PHONY: start
 start:
@@ -21,7 +20,7 @@ start:
 
 .PHONY: stop
 stop:
-	docker kill $(docker ps -q)
+	docker kill $(shell docker ps -q)
 
 .PHONY: remove-ssh-keys
 remove-ssh-keys:
