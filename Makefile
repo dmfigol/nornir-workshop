@@ -31,3 +31,7 @@ remove-ssh-keys:
 browser:
 	open "http://localhost:58888/"; \
     open "http://localhost:58888/notebooks/workshop.ipynb"
+
+.PHONY: credentials
+credentials:
+	mv session-details.example session-details.txt
