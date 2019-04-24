@@ -19,7 +19,6 @@ from interface import Interface
 logger = logging.getLogger(__name__)
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-colorama.init()
 
 
 def extract_hostname_from_fqdn(fqdn: str) -> str:
