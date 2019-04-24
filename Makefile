@@ -5,6 +5,10 @@ restconf-check:
 		curl -k -u cisco:cisco -H "Accept: application/yang-data+json" https://198.18.1.$$number/restconf/data/native/hostname ; \
 	done
 
+.PHONY: pull
+pull:
+	docker pull dmfigol/jupyter-netdevops:latest
+
 .PHONY: up
 up:
 	docker kill $(docker ps -q); \
