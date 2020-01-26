@@ -58,10 +58,11 @@ venv.bak/
 .DS_Store
 .idea/
 tmp/
-/*.log
-/*.txt
+*.log
+*.txt
 *.xlsx
 settings.toml
 
 .ipynb_checkpoints/
 session-details.txt
+.vscode

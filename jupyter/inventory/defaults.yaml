@@ -1,5 +1,0 @@
-platform: ios
-username: cisco
-password: cisco
-data:
-  snmp_community: secret

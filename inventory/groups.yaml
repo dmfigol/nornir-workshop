@@ -3,7 +3,7 @@ New York:
     ntp:
       servers:
         - 1.2.3.4
-London:
+Lisbon:
   data:
     ntp:
       servers:
